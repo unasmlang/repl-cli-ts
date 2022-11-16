@@ -24,6 +24,8 @@ if (!fileName || !fs.existsSync(fileName)) {
     while (true) {
       const ans = await rl.question('> ');
       console.log(libunasm.execute(ans));
+      for (const idx in libunasm.labels)
+        delete libunasm.labels[idx];
     }
   })();
 }
