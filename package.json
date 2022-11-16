@@ -1,0 +1,32 @@
+{
+  "name": "cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/インデックス.js",
+  "source": "src/index.ts",
+  "types": "dist/インデックス.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-lang": "rimraf src/libunasm && cpy ../libunasm/dist src/libunasm/",
+    "build": "parcel build",
+    "package": "pkg -t node18 dist/インデックス.js -o unasm",
+    "start": "pnpm build && node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@norathefurry/eslint-config": "^1.1.2",
+    "@parcel/core": "^2.8.0",
+    "@parcel/packager-ts": "^2.8.0",
+    "@parcel/transformer-typescript-types": "^2.8.0",
+    "@types/node": "^18.11.9",
+    "cpy": "^9.0.1",
+    "cpy-cli": "^4.2.0",
+    "eslint": "^8.27.0",
+    "parcel": "^2.8.0",
+    "pkg": "^5.8.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.3"
+  }
+}

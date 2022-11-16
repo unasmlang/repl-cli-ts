@@ -102,3 +102,13 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Language Source
+src/libunasm
+
+# Binaries
+/unasm
+/unasm.exe
+
+# Parcel
+.parcel-cache
