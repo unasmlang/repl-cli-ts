@@ -12,9 +12,13 @@
     "package": "pkg -t node18 dist/インデックス.js -o unasm",
     "start": "pnpm build && node ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "unasm",
+    "esolang",
+    "cli"
+  ],
+  "author": "MokiyCodes",
+  "license": "MIT",
   "devDependencies": {
     "@norathefurry/eslint-config": "^1.1.2",
     "@parcel/core": "^2.8.0",
